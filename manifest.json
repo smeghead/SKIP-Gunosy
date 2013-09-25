@@ -1,0 +1,16 @@
+{
+  "name": "SKIP Gunosy",
+  "version": "0.0.1",
+  "description": "skip gunosy.",
+  "icons": { "48": "icon.png" },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "http://gunosy.com/g/*"
+      ],
+      "js": ["jquery.js", "content-script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
